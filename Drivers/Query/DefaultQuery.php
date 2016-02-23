@@ -47,7 +47,7 @@ class DefaultQuery extends PdoQuery
     public function createTableQuery()
     {
         $this->db->exec(
-            sprintf('CREATE TABLE IF NOT EXISTS %s (ttl datetime DEFAULT NULL)', self::NAME_TABLE)
+            sprintf('CREATE TABLE IF NOT EXISTS %s (ttl timestamp DEFAULT NULL)', self::NAME_TABLE)
         );
     }
 
